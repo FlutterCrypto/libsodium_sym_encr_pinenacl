@@ -32,29 +32,19 @@ in AndroidManifest.xml ergänzen:
     </queries>
 ```    
 
-Private key Sender:
+Passwort:
 ```plaintext
-38PnbIaNFoY4UKYY8x63itHY1dlz4eicARA6i42HFB8=
+Passwort12345
 ```
 
-PublicKey Sender:
+Iterationen:
 ```plaintext
-Oiq+GOqfT1L2PBmkOvL+h9WP1CSSUx5lbvVjOwaKIyQ=
-```
-
-Private key Empfänger:
-```plaintext
-8hivrN+NJ5HkrHtMvhUPI76GLu/RogeChYJ6pHJXu7I=
-```
-
-PublicKey Empfänger:
-```plaintext
-trk08wvA81TFM67uJx6rt6UPbipv7pG8o4Lh6cWHRGQ=
+15000
 ```
 
 Klartext:
 ```plaintext
-The quick brown fox jumps over the lazy dog
+Mein wichtiges Geheimnis
 ```
 
 Sample SecretBox:
@@ -62,9 +52,9 @@ Sample SecretBox:
 {
   "algorithm": "XSalsa20Poly1305 PBKDF2",
   "iterations": "15000",
-  "salt": "dvV2ihvCqdE5hzgenZQsTBdei203Dhdg7zlDPKewdDo=",
-  "iv": "nicht benutzt",
-  "ciphertext": "jtDN1LdNDwE+YG1ykO+qQq86jlNJCkUr0istfKAaXOx4TT0gNdFdNtEFN+wm0fHoo7utqAZiwR85iQw8XubLOnFEJFVxHkYKxHzKeHacqKzeJ4Y=",
+  "salt": "fFyoi9/sfvyBVVVbPM477AgLsPQv7JBsU9hasyP62tE=",
+  "iv": "in ciphertext integriert",
+  "ciphertext": "Zk4H3FWYqnNOBLzH9HUrOG4YEUdNAJTvPRmIFHjxEFG2KAEC3DdZcaRGsZg3Bz7om2Fbcpfcl/AYLn9kCTcGeA==",
   "gcmTag": "nicht benutzt"
 }
 ```

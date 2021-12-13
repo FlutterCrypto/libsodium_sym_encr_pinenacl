@@ -44,7 +44,7 @@ class _MyFormPageState extends State<SecretBoxPbkdf2EncryptionRoute> {
     var iterations = parts[1];
     var salt = parts[2];
     //var iv = parts[3]; // nicht benutzt
-    var iv = 'nicht benutzt';
+    var iv = 'in ciphertext integriert';
     var ciphertext = parts[3];
     var gcmTag = parts[4]; // nicht benutzt
 
